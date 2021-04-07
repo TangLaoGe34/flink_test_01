@@ -18,6 +18,7 @@ public class WordCountBounded {
         System.out.println("testgit");
         environment.setParallelism(1);
 
+        System.out.println("test brach");
         DataStreamSource<String> source = environment.readTextFile("src/main/resources/word.txt");
 
         SingleOutputStreamOperator<Tuple2<String, Integer>> flatMap = source.flatMap(new FlatMapFunc());
