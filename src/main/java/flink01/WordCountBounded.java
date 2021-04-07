@@ -15,6 +15,7 @@ public class WordCountBounded {
 
         StreamExecutionEnvironment environment = StreamExecutionEnvironment.getExecutionEnvironment();
 
+        System.out.println("testgit");
         environment.setParallelism(1);
 
         DataStreamSource<String> source = environment.readTextFile("src/main/resources/word.txt");
